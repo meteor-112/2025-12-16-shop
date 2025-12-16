@@ -1,0 +1,24 @@
+        body {
+            height: 100vh;
+            background-image: url('./img/pic-5.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .row {
+            height: 100vh;
+        }
+        .logo{
+            min-width: 300px;
+        }
+        .abc{
+            color: red;
+            left: 50%;
+            bottom: 5%;
+            transform: translateX(-50%);
+        }
+        @media (min-width:992px) {
+            .abc{
+                left: 25%;
+            }            
+        }

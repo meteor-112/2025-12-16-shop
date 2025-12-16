@@ -1,0 +1,115 @@
+        nav {
+            background-color: #FDBC00;
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .dropdown-menu[data-bs-popper] {
+            top: 100%;
+            left: -110px;
+        }
+
+        .nav-item :hover {
+            color: white;
+        }
+
+        .dropdown-menu:hover {
+            color: black;
+        }
+
+        .dropdown-item:hover {
+            color: black;
+        }
+
+        .logo img {
+            width: 170px;
+            height: 40px;
+        }
+
+        .underline-thick {
+            text-decoration-thickness: 3px;
+        }
+
+        .main-h {
+            min-height: 800px;
+        }
+
+        .carousel-item {
+            max-height: calc(100vh - 66px)
+        }
+
+        .border-bottom.border-warning.border-5 {
+            height: 30px;
+            width: 25%;
+            min-width: 100px;
+        }
+
+        .circle {
+            background-color: #FDBC00;
+            width: 120px;
+            height: 120px;
+            font-size: 50px;
+        }
+
+        main section .row .link:hover .bi-arrow-right {
+            left: 110%;
+        }
+
+        .border {
+            width: 80px;
+        }
+
+        /* -------------radio-color--------------- */
+        /* 隱藏原生 radio */
+        .color-radio {
+            display: none;
+        }
+
+        /* 基本圓圈樣式 */
+        .custom-circle {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            /* position: relative; */
+        }
+
+        /* 被選中時加外框，但不改顏色 */
+        .color-radio:checked+.custom-circle {
+            box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ---------------------------------------- */
+        .heart-label {
+            cursor: pointer;
+        }
+
+        .heart-label .bi-heart-fill,
+        .heart-switch:checked+.heart-label .bi-heart {
+            display: none;
+        }
+
+        .heart-switch:checked+.heart-label .bi-heart-fill {
+            display: block;
+        }
+
+        iframe {
+            filter: grayscale(0.3);
+            border: 0;
+        }
+
+        .feedback {
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            min-width: 250px;
+        }
+
+        @media (min-width: 992px) {
+            .feedback {
+                top: 50%;
+                right: 0%;
+                transform: translate(-25%, -50%);
+            }
+        }
