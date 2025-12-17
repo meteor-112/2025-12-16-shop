@@ -267,7 +267,8 @@
                     <div class="border border-warning border-2"></div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    At Mama John’s, we believe quality is non-negotiable.From premium materials to thoughtful design, we make sure every
+                    At Mama John’s, we believe quality is non-negotiable.From premium materials to thoughtful design, we
+                    make sure every
                     product meets the standards you deserve.
                 </div>
             </div>
@@ -275,7 +276,7 @@
 
         <!-- 四張卡片 -->
         <section class="container pb-3">
-            <div class="row justify-content-between">
+            <div id="card-list" class="row justify-content-between">
                 <div class="col-12 col-lg-3 mb-5 mb-lg-0">
                     <div class="card p-3 rounded h-100">
                         <img src="./img/card1.jpg" class="card-img-top rounded" alt="...">
@@ -299,7 +300,8 @@
                         <img src="./img/card3.jpg" class="card-img-top rounded" alt="...">
                         <span class="text-primary mb-2">Outdoor</span>
                         <h5 class="card-title mb-4">Adventure Ready</h5>
-                        <p class="card-text">Reliable gear built to handle demanding conditions wherever life takes you.</p>
+                        <p class="card-text">Reliable gear built to handle demanding conditions wherever life takes you.
+                        </p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3">
@@ -307,7 +309,8 @@
                         <img src="./img/card4.jpg" class="card-img-top rounded" alt="...">
                         <span class="text-primary mb-2">Lifestyle</span>
                         <h5 class="card-title mb-4">Home Comfort Favorites</h5>
-                        <p class="card-text">Thoughtfully designed pieces that bring warmth and ease to every corner of your home.</p>
+                        <p class="card-text">Thoughtfully designed pieces that bring warmth and ease to every corner of
+                            your home.</p>
                     </div>
                 </div>
             </div>
@@ -620,6 +623,54 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script>
+        //存圖片的形式
+        let cards = [
+            {
+                'img': './img/card1.jpg',
+                'smallTitle': 'Household',
+                'title': 'Everyday Essentials',
+                'description': 'Durable, practical items crafted to support your daily routines',
+            },
+            {
+                'img': './img/card2.jpg',
+                'smallTitle': 'Wellness',
+                'title': 'Personal Care Picks',
+                'description': 'Gentle, effective products designed to help you look and feel your best.',
+            },
+            {
+                'img': './img/card3.jpg',
+                'smallTitle': 'Outdoor',
+                'title': 'Adventure Ready',
+                'description': 'Reliable gear built to handle demanding conditions wherever life takes you.',
+            },
+            {
+                'img': './img/card4.jpg',
+                'smallTitle': 'Lifestyle',
+                'title': 'Home Comfort Favorites',
+                'description': 'Thoughtfully designed pieces that bring warmth and ease to every corner of your home.',
+            }
+        ];
+        console.log(cards);
+        const cardList = document.querySelector('#card-list');
+        cards.forEach((item) => {
+            console.log(item);
+            cardList.innerHTML += `                
+                    <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+                    <div class="card p-3 rounded h-100">
+                        <img src="./img/card1.jpg" class="card-img-top rounded" alt="...">
+                        <span class="text-primary mb-2">Household</span>
+                        <h5 class="card-title mb-4">Everyday Essentials</h5>
+                        <p class="card-text">Durable, practical items crafted to support your daily routines
+                            effortlessly.</p>
+                    </div>
+                </div>
+        `
+        })
+
+
+    </script>
 </body>
 
 </html>
