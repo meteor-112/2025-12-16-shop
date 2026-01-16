@@ -1,7 +1,9 @@
 # Shop
 一個使用 Bootstrap 與 javascript 製作的商品首頁與購物車
 ## Screenshot
-![preview](./screenshot.png)
+![preview](./homepage.png)
+![preview](./cart-1.png)
+![preview](./cart-2.png)
 
 ## Features
 - 點擊購買商品後跳出成功提示後，自動加入購物車
